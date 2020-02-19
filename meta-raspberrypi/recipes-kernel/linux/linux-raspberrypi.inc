@@ -105,6 +105,9 @@ do_configure_prepend() {
         kernel_configure_variable OVERLAY_FS y
         kernel_configure_variable SQUASHFS y
         kernel_configure_variable UBIFS_FS y
+        kernel_configure_variable BLK_DEV_INITRD y
+        kernel_configure_variable INITRAMFS_SOURCE ""
+        kernel_configure_variable RD_GZIP y
     fi
 
     # Activate the configuration options for VC4
